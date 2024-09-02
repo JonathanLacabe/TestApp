@@ -1,11 +1,4 @@
 <resources>
-    <string name="app_name">Pre-Lightnote</string>
-    <string-array name="students">
-        <item>Jonathan</item>
-        <item>Whatshisface</item>
-        <item>The Other Guy</item>
-        <item>Geezer</item>
-        <item>Whippersnapper</item>
-        <item>Snoozer</item>
-    </string-array>
+    <string name="app_name">Pre-LightNote</string>
+    <string name = "hello">Hello</string>
 </resources>
