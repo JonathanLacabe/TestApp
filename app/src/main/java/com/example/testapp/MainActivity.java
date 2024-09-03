@@ -23,15 +23,16 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 
 public class MainActivity extends ComponentActivity {
-    private TextView txtHello;
     private ConstraintLayout parent;
     private Button btnShowSnackBar;
+    private MaterialCardView cardView;
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
@@ -40,6 +41,13 @@ public class MainActivity extends ComponentActivity {
 
         parent = findViewById(R.id.parent);
         btnShowSnackBar = findViewById(R.id.button);
+        cardView = findViewById(R.id.cardView);
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Card Clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         btnShowSnackBar.setOnClickListener(new View.OnClickListener() {
             @Override
